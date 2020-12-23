@@ -1,0 +1,58 @@
+body {
+  font-size: 1.2em;
+}
+div.tabs > a, div.tabs > button {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+.activeTab, .active {
+  font-weight: bold;
+}
+
+#load, #list, #list1, #list2 {
+  float: left;
+}
+#list2 {
+  margin-left: 20px;
+}
+h3 {
+  color: #0033FF;
+}
+h4 {
+  color: #FF3300;
+}
+
+.loading-icon {
+  position: absolute;
+  left: calc(100% / 2);
+  top: 10px;
+  width: 20%;
+  opacity: 0.6;
+}
+/* .loading-icon {
+  width: 30%;
+  opacity: 0.8;
+} */
+li[ui-sref]:hover {
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.removed {
+  color: #DD0000;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+/* .warning {
+  font-style: italic;
+}
+
+.warning-title {
+  background-color: #d0c1c1;
+} */
