@@ -1,9 +1,14 @@
-<h4>Menu Items</h4>
-<ol>
-  <li ng-repeat="item in itemList.items">
-  <span class="active">{{item.name}} ({{item.short_name}}):</span>
-  <span ng-if="item.price_small !== null">Small:&nbsp{{item.price_small | currency}} - </span>
-  <span ng-if="item.price_large !== null">Large:&nbsp{{item.price_large | currency}}</span>
-  <br><span ng-if="item.description !== ''">{{item.description}}.<br></span>
-  </li>
-</ol>
+<div class="col-xs-6">
+  <br>
+  <h4>{{itemList.category.name}} Menu:</h4>
+  <div class="alert alert-info">
+    <ol>
+      <li ng-repeat="item in itemList.items">
+        <span class="active">{{item.name}} ({{item.short_name}}):</span>
+        <span ng-if="item.price_small !== null">Small:&nbsp{{item.price_small | currency}} - </span>
+        <span ng-if="item.price_large !== null">Large:&nbsp{{item.price_large | currency}}</span>
+        <br><span ng-if="item.description !== ''">{{item.description}}.<br></span>
+      </li>
+    </ol>
+  </div>
+</div>

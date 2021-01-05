@@ -8,8 +8,9 @@ ItemListController.$inject = ['items'];
 function ItemListController(items) {
   var itemList = this;
   itemList.items = items.data.menu_items;
-  itemList.shortName = "";
-  //console.log("itemList.items: ", itemList.items);
+  itemList.category = items.data.category;
+  console.log("items.data: ", items.data);
+  console.log("itemList.category: ", itemList.category);
 }
 
 })(); // end module Immediately Invoked Function (IIFE)

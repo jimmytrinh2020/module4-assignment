@@ -1,10 +1,22 @@
 body {
   font-size: 1.2em;
 }
-div.tabs > a, div.tabs > button {
+li {
+  font-size: 1.3em;
+}
+.red {
+  color: #DD0000;
+}
+.links {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+  clear: both;
+}
+/* div.tabs > a, div.tabs > button {
   margin-right: 10px;
   font-size: 1.2em;
-}
+} */
 .activeTab, .active {
   font-weight: bold;
 }
@@ -18,8 +30,9 @@ div.tabs > a, div.tabs > button {
 h3 {
   color: #0033FF;
 }
-h4 {
-  color: #FF3300;
+h2, h4 {
+  /* color: #FF3300; */
+  font-weight: bold;
 }
 
 .loading-icon {
